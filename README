@@ -1,0 +1,20 @@
+Warning Label Generator
+Version 1.0
+Contact: Andrew Stock <totally@funoninter.net>
+
+========================
+License
+========================
+This work (warning.php) is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+All of the images, with the exception of warning.png, are rasterizations of public-domain SVGs available on Wikipedia.
+
+========================
+Notes for deployment
+========================
+
+The PHP file relies on the presence of a .ttf file in the same directory as the PHP file.  Currently this TTF file is set to "HelveticaBd.ttf" which is not included in this repository for copyright reasons.  Whatever file you want to use, you must configure the script to point to it, by changing the line:
+
+	define("FONT", "HelveticaBd.ttf");
+	
+as appropriate, where the second parameter should the name of your TTF file.
